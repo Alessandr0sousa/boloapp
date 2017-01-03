@@ -1,0 +1,64 @@
+<ion-view view-title="Bolos da Vânia">
+	<ion-content id="bolo">
+
+		<div class="fundo">
+			<h2 class="tt">Vendas</h2>
+			<div class="list">
+				<label class="item item-input">
+					<span class="input-label">Nome:</span>
+					<input type="text">
+				</label>
+			<label class="item item-input item-select">
+					<div class="input-label">
+						Produtos
+					</div>
+					<select class="form-control" ng-model="prod" ng-options="prod.nome group by prod.tipo for prod in produtos | orderBy:'nome'">
+					<option value="">Selecionar Produto</option>
+					</select>    
+				</label>
+				<div class="row item">
+					<div class="col col-33">
+						<label class="item item-input item-stacked-label">
+							<span class="input-label">Preço</span>
+							<input id="valor" class="vlr" type="text" value="{{prod.valor | currency}}" placeholder="R$0,00" readonly>
+						</label>
+					</div>
+					<div class="col">
+						<label class="item item-input item-stacked-label">
+							<span class="input-label">Qtd.</span>
+							<input ng-model="qtd" class="vlr" type="number" min="0" placeholder="0">
+						</label>
+					</div>
+					<div class="col">
+						<label class="item item-input item-stacked-label">
+							<span class="input-label">Total</span>
+							<input class="vlr" type="text" placeholder="R$0.00" value="{{prod.valor * qtd | currency }}" readonly>
+						</label>
+					</div>
+				</div>
+				<hr class="a"/>
+				<div class="row item">
+					<div class="col col-50">
+						<label class="item item-input">
+							<span class="input-label">Data:</span>
+							<input class="vlr" type="text" value="{{prod.data | date: 'dd/MM/yyyy'}}" placeholder="00/00/0000" readonly>
+						</label>
+					</div>
+					<div class="col">
+						<label class="item item-select status">
+							<div class="input-label">
+								Status
+							</div>
+							<select>
+								<option>Ok</option>
+								<option>Ñ_Ok</option>
+							</select>
+						</label>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="button button-small button-positive btv">Salvar</button>
+
+		</div>
+	</ion-content>
+</ion-view>

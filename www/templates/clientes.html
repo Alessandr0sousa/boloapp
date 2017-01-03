@@ -1,0 +1,31 @@
+<ion-view view-title="Bolos da vânia">
+  <ion-content class="fundoc">
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Nome:</span>
+        <input id="nome" type="text" ng-model="cli.cli_nome" placeholder="Nome">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Telefone:</span>
+        <input id="telefone" type="text" ng-model="cli.cli_telefone" placeholder="Telefone">
+      </label>
+    </div>
+    <div class="btn">
+      <button class="button button-small button-positive" ng-click="cadastrar(cli)" ng-disabled="!cli.cli_nome || !cli.cli_telefone">Cadastrar</button>
+    </div>
+    <h2 class="tc">{{titulo}}</h2>
+    <hr class="b">
+    <table class="table table-striped table-hover">
+      <thead>
+        <th>Nome</th>
+        <th>Telefone</th>
+      </thead>
+      <tbody>
+        <tr ng-repeat="cli in clientes">
+          <td>{{cli.cli_nome}}</td>
+          <td>{{cli.cli_telefone}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,102 @@
+/* Empty. Add your own CSS if you like */
+
+#bolo{
+	background: url('../img/b_pot.png') no-repeat;
+	background-size: 100% 100%;
+}
+.jumbotron{
+
+	text-align: center;
+	margin-top: 20%;
+}
+.busca{
+	margin-top: 1%;
+}
+.item{
+	margin-bottom: 0.5%;
+}
+/*fromatação de titulos*/
+.tt{
+	font-weight: bolder;
+	padding-bottom: 5%;
+	padding-top: 20%;
+	color: #fff;
+}
+.tc{
+	font-weight: bolder;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	color: #fff;
+}
+/*fomatação de listas*/
+/*.plist{
+	text-align: left;
+}
+.mlist{
+	margin-bottom: 0;
+	border-bottom: 0.5%;
+}*/
+.form-control{
+	border: none;
+	}
+	.rad{
+
+		border: none;
+	}
+	.prod{
+		padding-right: 20%;
+	}
+	.col{
+		padding: 0;
+		border: none;
+	}
+	.row{
+		padding: 0;
+		border: none;
+	}
+	.vlr{
+		text-align: center;
+	}
+	.status{
+		padding: 3%;
+	}
+	/*formatação de <hr>*/
+	.a{
+		padding: 0;
+		margin: 0;
+		border: none;
+	}
+	.b{
+		padding: 0;
+		margin: 0;
+	}
+	/*fundo da tela de vendas*/
+	.fundo{
+		background-color: rgba(0, 0, 0, 0.6);	
+		text-align: center; 
+	}
+	.back{
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+	.fundoc{
+		background-color: rgba(0, 0, 10, 0.3);	
+		text-align: center;
+	}
+	/*botoes*/
+	.btv{
+		margin-bottom: 80%;
+	}
+	.bte{
+		margin-top: 130%
+	}
+	/*funfo tela home*/
+	.logo{
+		background: url('../img/bl_v_l.png') no-repeat;
+		background-size: 100%;
+		background-position: center;
+	}
+	/*Alinhamento do titulo*/
+	.btn,
+	.bar .title.title-left{
+		text-align: center;
+	}
